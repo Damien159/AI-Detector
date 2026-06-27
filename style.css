@@ -1,0 +1,69 @@
+/* Grundlayout */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0f172a; /* dunkler Hintergrund */
+    color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Titel */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+/* Textarea */
+textarea {
+    width: 420px;
+    height: 180px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    background: #1e293b;
+    color: #e2e8f0;
+    font-size: 14px;
+    outline: none;
+    resize: none;
+    transition: 0.2s;
+}
+
+/* Fokus Effekt */
+textarea:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #38bdf8;
+    color: #0f172a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Button Hover */
+button:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+/* Ergebnis Text */
+h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #1e293b;
+    border: 1px solid #334155;
+}
