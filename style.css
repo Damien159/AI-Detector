@@ -1,45 +1,66 @@
-/* Grundlayout */
-body {
+* {
     margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #0f172a; /* dunkler Hintergrund */
-    color: #e2e8f0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Titel */
-h1 {
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+header h1 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
     color: #38bdf8;
 }
 
-/* Textarea */
-textarea {
-    width: 420px;
+header .subtitle {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#Inputarea {
+    width: 100%;
     height: 180px;
     padding: 15px;
     border-radius: 12px;
     border: 1px solid #334155;
-    background: #1e293b;
+    background: #0f172a;
     color: #e2e8f0;
     font-size: 14px;
     outline: none;
-    resize: none;
+    resize: vertical;
     transition: 0.2s;
 }
 
-/* Fokus Effekt */
-textarea:focus {
+#Inputarea:focus {
     border-color: #38bdf8;
     box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
 }
 
-/* Button */
 button {
     margin-top: 15px;
     padding: 10px 25px;
@@ -52,19 +73,27 @@ button {
     transition: 0.2s;
 }
 
-/* Button Hover */
 button:hover {
     background: #0ea5e9;
     transform: scale(1.05);
 }
 
-/* Ergebnis Text */
-h2 {
+#result-box {
     margin-top: 20px;
+}
+
+#result {
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 10px;
     background: #1e293b;
     border: 1px solid #334155;
     color: #94a3b8;
+    display: inline-block;
+}
+
+footer {
+    margin-top: 24px;
+    font-size: 0.8rem;
+    color: #64748b;
 }
