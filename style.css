@@ -97,3 +97,24 @@ footer {
     font-size: 0.8rem;
     color: #64748b;
 }
+#charcount {
+    text-align: right;
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-top: 6px;
+}
+
+#result.loading {
+    color: #38bdf8;
+    border-color: #38bdf8;
+}
+
+#result.ai {
+    color: #f87171;
+    border-color: #f87171;
+}
+
+#result.human {
+    color: #4ade80;
+    border-color: #4ade80;
+}
