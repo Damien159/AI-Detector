@@ -4,17 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>AI Text Detector</title>
 </head>
 
 <body>
-    <h1>AI Text Detector</h1>
+    <div class="wrapper">
+        <header>
+            <h1>AI Text Detector</h1>
+            <p class="subtitle">Finde raus, ob ein Text von einer KI geschrieben wurde</p>
+        </header>
 
-    <textarea name="Text" id="Inputarea" placeholder="Please enter your text..."></textarea>
-    <button onclick="checkText()">Testen</button>
+        <main class="card">
+            <textarea name="Text" id="Inputarea" placeholder="Gib deinen Text hier ein..."></textarea>
+            <button onclick="checkText()">Testen</button>
 
-    <h2 id="result">Dieser Text ist KI generiert </h2>
+            <div id="result-box">
+                <h2 id="result">Dieser Text ist KI generiert</h2>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 AI Text Detector</p>
+        </footer>
+    </div>
+
     <script src="script.js"></script>
 </body>
 
